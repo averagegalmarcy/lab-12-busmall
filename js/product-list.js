@@ -1,4 +1,4 @@
-let product = [{
+let products = [{
     name:'r2d2 suitcase',
     image: 'assets/bag.jpg'
 },
@@ -77,6 +77,18 @@ let product = [{
 {
     name:'wine glass',
     image: 'assets/wine-glass.jpg'
+},
+{
+    name:'crib dribbler',
+    image: 'assets/dribbler.jpg'
+},
+{
+    name:'hander pants',
+    image: 'assets/handerpants.jpeg'
+},
+{
+    name:'moldy sandwich bag',
+    image: 'assets/mold.jpg'
 }]; 
 
-export default product; 
+export default products; 

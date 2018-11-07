@@ -1,9 +1,9 @@
-import product from './product-list.js'; 
+import products from './product-list.js'; 
 
 const productApi = {
     getAll() {
     
-        const survey = product.map(product => {
+        const survey = products.map(product => {
             return {
                 name: product.name,
                 image: product.image,
