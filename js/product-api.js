@@ -1,8 +1,18 @@
-import productList from './product-list.js'; 
+import product from './product-list.js'; 
 
 const productApi = {
     getAll() {
-        return productList; 
+    
+        const survey = product.map(product => {
+            return {
+                name: product.name,
+                image: product.image,
+                views: 0,
+                clicks: 0
+            };
+        });
+         
+        return survey; 
     }
 }; 
 

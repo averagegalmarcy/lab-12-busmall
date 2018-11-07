@@ -1,7 +1,6 @@
-import ImageDisplay from './image-display.js'; 
-import productApi from './product-api.js';
+// import ImageDisplay from './image-display.js'; 
+// import productApi from './product-api.js';
 
-let products = productApi.getAll();
+// let products = productApi.getAll();
 
-let 
 

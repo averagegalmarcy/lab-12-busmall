@@ -1,21 +1,16 @@
-import product from './product-list.js'; 
-import productApi from './product-api'; 
 import html from './html.js'; 
-import productsApi from '../../lab-09-fundraiser/js/product-api.js';
-
-let products = productApi.getAll(); 
 
 function makeTemplate() {
     return html`
     <section>
         <div>
-        <img id="product-1" src="$">
+        <img id="product-1">
         </div>
         <div>
-        <img id="product-2" src="$">
+        <img id="product-2">
         </div>
         <div>
-        <img id="product-3" src="$">
+        <img id="product-3">
         </div>
     </section>
     `; 
@@ -29,23 +24,30 @@ class ImageDisplay {
     }
 
     render() {
-
+        console.log('hi', this.products); 
         const dom = makeTemplate(); 
 
         const image1 = dom.getElementById('product-1');
-        const image2 = dom.getElementById('product-2'); 
-        const image3 = dom.getElementById('product-3');  
+        const image2 = dom.getElementById('product-2');
+        const image3 = dom.getElementById('product-3');
+        
+        this.getImage(); 
+        
+        image1.src = `${this.randomImages[0].image}`;
+        image2.src = `${this.randomImages[1].image}`;
+        image3.src = `${this.randomImages[2].image}`; 
 
         return dom;
     }
 
     getImage() {
-        for(let i = 0; i < 3; i++); {
+        for(let i = 0; i < 3; i++) {
             const index = Math.floor(Math.random() * 19);
-            this.products = this.randomImages[index]; 
+            this.randomImages.push(this.products[index]); 
+            console.log("hello", this.products[index]); 
+
         }
-    }
-    
-}; 
+    } 
+}
 
 export default ImageDisplay; 

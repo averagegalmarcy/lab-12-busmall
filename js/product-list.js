@@ -1,82 +1,82 @@
 let product = [{
     name:'r2d2 suitcase',
-    image: 'bag.jpg'
+    image: 'assets/bag.jpg'
 },
 {
     name:'banana slicer',
-    image: 'banana.jpg'
+    image: 'assets/banana.jpg'
 },
 {
     name:'ipad stand',
-    image: 'bathroom.jpg'
+    image: 'assets/bathroom.jpg'
 },
 {
     name:'rain boots',
-    image: 'boots.jpg'
+    image: 'assets/boots.jpg'
 },
 {
     name:'breakfast maker',
-    image: 'breakfast.jpg'
+    image: 'assets/breakfast.jpg'
 },
 {
     name:'meatball gum',
-    image: 'bubblegum.jpg'
+    image: 'assets/bubblegum.jpg'
 },
 {
     name:'chair',
-    image: 'chair.jpg'
+    image: 'assets/chair.jpg'
 },
 {
     name:'cthulhu',
-    image: 'cthulhu.jpg'
+    image: 'assets/cthulhu.jpg'
 },
 {
     name:'dog duck mask',
-    image: 'dog-duck.jpg'
+    image: 'assets/dog-duck.jpg'
 },
 {
     name: 'dragon meat',
-    image: 'dragon.jpg'
+    image: 'assets/dragon.jpg'
 },
 {
     name:'pen silverware',
-    image: 'pen.jpg'
+    image: 'assets/pen.jpg'
 },
 {
     name:'pet sweeper',
-    image: 'pet-sweeper.jpg'
+    image: 'assets/pet-sweep.jpg'
 },
 {
     name:'pizza scissors',
-    image: 'pizza.jpg'
+    image: 'assets/scissors.jpg'
 },
 {
     name:'shark bed',
-    image: 'shark.jpg'
+    image: 'assets/shark.jpg'
 },
 {
     name:'baby sweeper',
-    image: 'sweep.png'
+    image: 'assets/sweep.png'
 },
 {
     name:'tauntaun sleeping bag',
-    image: 'tauntaun.jpg'
+    image: 'assets/tauntaun.jpg'
 },
 {
     name:'unicorn meat',
-    image: 'unicorn.jpg'
+    image: 'assets/unicorn.jpg'
 },
 {
     name:'octopus usb',
-    image: 'usb.gif'
+    image: 'assets/usb.gif'
 },
 {
     name:'water can',
-    image: 'water-can.jpg'
+    image: 'assets/water-can.jpg'
 },
 {
     name:'wine glass',
-    image: 'wine-glass.jpg'
+    image: 'assets/wine-glass.jpg'
 }]; 
 
 export default product; 
