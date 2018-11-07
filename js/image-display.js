@@ -27,9 +27,26 @@ class ImageDisplay {
         console.log('hi', this.products); 
         const dom = makeTemplate(); 
 
+
+
         const image1 = dom.getElementById('product-1');
         const image2 = dom.getElementById('product-2');
         const image3 = dom.getElementById('product-3');
+
+        image1.addEventListener('click', () => {
+            image1.views++;
+            image1.clicks++; 
+
+        }); 
+        
+        image2.addEventListener('click', () => {
+            image2.views++;
+            image2.clicks++;
+        }); 
+        image3.addEventListener('click', () => {
+            image3.views++; 
+            image3.clicks++; 
+        }); 
         
         this.getImage(); 
         
