@@ -14,12 +14,10 @@ class ImageDisplay {
 
     constructor(product, onSelect) {
         this.product = product; 
-        // this.randomImages = []; 
         this.onSelect = onSelect;  
     }
 
-    render() { 
-        // this.getImage(); 
+    render() {  
         
         const dom = makeTemplate(); 
         const listItem = dom.querySelector('img'); 
@@ -33,13 +31,6 @@ class ImageDisplay {
 
         return dom;
     }
-    // getImage() {
-    //     for(let i = 0; i < 3; i++) {
-    //         const index = Math.floor(Math.random() * 22);
-    //         this.randomImages.push(this.product[index]); 
-
-    //     }
-    // } 
 }
 
 export default ImageDisplay; 

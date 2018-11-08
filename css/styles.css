@@ -3,3 +3,7 @@ header {
    font-size: 30pt; 
    text-align: center;
 }
+img {
+    width: 200px; 
+    border: solid 2pt black; 
+}

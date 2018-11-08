@@ -1,6 +1,6 @@
 import html from './html.js'; 
 
-let template = function(product) {
+let template = function(products) {
     return html`
     <li>
     <img class="product">

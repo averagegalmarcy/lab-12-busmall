@@ -1,6 +1,5 @@
 import html from './html.js'; 
 import ImageDisplay from './image-display.js'; 
-// import products from './product-list.js'; 
 
 function makeTemplate() {
     return html`
@@ -20,7 +19,6 @@ export default class ProductSelector {
         for(let i = 0; i < 3; i++) {    
             let index = this.getImage(); 
             let imageDisplay = new ImageDisplay(this.products[index], this.onSelect); 
-            // html += `<img class="funny-image" src="${this.products[index].image}">`;   
         
             ul.appendChild(imageDisplay.render()); 
         }
@@ -28,12 +26,11 @@ export default class ProductSelector {
         return dom; 
     }
     getImage() {
-        const index = Math.floor(Math.random() * 22);
 
+        const index = Math.floor(Math.random() * 22);
         return index;
 
     }
-    // } 
 }
 
 
