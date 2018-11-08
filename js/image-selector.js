@@ -9,10 +9,9 @@ function makeTemplate() {
 }
 
 export default class ProductSelector {
-    constructor(products, onSelect, countStop) {
+    constructor(products, onSelect) {
         this.products = products;
-        this.onSelect = onSelect; 
-        // this.countStop = 0; 
+        this.onSelect = onSelect;  
          
     }
     render(){
@@ -27,8 +26,7 @@ export default class ProductSelector {
     update() {
 
         while(this.ul.lastElementChild) {
-            this.ul.lastElementChild.remove(); 
-            // console.log('sup', this.ul.lastElementChild); 
+            this.ul.lastElementChild.remove();  
         }
 
 
@@ -37,8 +35,6 @@ export default class ProductSelector {
             let index = this.getImage(); 
             let imageDisplay = new ImageDisplay(this.products[index], this.onSelect);
             this.products[index].views++; 
-
-            // console.log('hello', this.products[index]); 
         
 
             this.ul.appendChild(imageDisplay.render());

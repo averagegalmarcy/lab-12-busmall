@@ -1,8 +1,6 @@
-// import ImageDisplay from './image-display.js'; 
 import productApi from './product-api.js'; 
 import html from './html.js'; 
-import ProductSelector from './image-selector.js'; 
-// import UpdateList from './update-list.js';  
+import ProductSelector from './image-selector.js';   
 
 // const products = productApi.getAll(); 
 
@@ -35,7 +33,6 @@ class ProductApp {
             if(this.totalCount === 25) {
                 alert('The survey has ended'); 
             } 
-            // console.log('hello', product);
         
         });
         this.list.appendChild(productSelector.render()); 
