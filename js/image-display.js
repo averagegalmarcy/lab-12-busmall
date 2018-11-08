@@ -23,9 +23,9 @@ class ImageDisplay {
         
         const dom = makeTemplate(); 
         const listItem = dom.querySelector('img'); 
-        // listItem.addEventListener('click', () => {
-        //     this.onSelect(this.product); 
-        // }); 
+        listItem.addEventListener('click', () => {
+            this.onSelect(this.product); 
+        }); 
         
         
         listItem.src = this.product.image;  

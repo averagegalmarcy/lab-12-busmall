@@ -8,7 +8,7 @@ const productApi = {
                 name: product.name,
                 image: product.image,
                 views: 0,
-                clicks: 0
+                clicks: 0,
             };
         });
          

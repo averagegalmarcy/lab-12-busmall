@@ -17,28 +17,22 @@ export default class ProductSelector {
         let dom = makeTemplate(); 
         const ul = dom.querySelector('ul'); 
 
-        // for(var i = 0; i < 3; i++) {
-        //     let productComp = new ImageDisplay(this.products[this.getImage()], this.onSelect); 
-        //     ul.appendChild(productComp.render()); 
-        // }
-        // let product = products[i]; 
-        // const randomArray = []; 
+        for(let i = 0; i < 3; i++) {    
+            let index = this.getImage(); 
+            let imageDisplay = new ImageDisplay(this.products[index], this.onSelect); 
+            // html += `<img class="funny-image" src="${this.products[index].image}">`;   
         
-        // if(product.indexOf(product) === -1) {
-        //     product.push(product); 
-        // }
-        // else if 
+            ul.appendChild(imageDisplay.render()); 
+        }
 
         return dom; 
     }
     getImage() {
-        // for(let i = 0; i < 3; i++) {
-            const index = Math.floor(Math.random() * 22);
-            // this.randomImages.push(this.product[index]); 
+        const index = Math.floor(Math.random() * 22);
 
-            return index;
+        return index;
 
-        }
+    }
     // } 
 }
 
