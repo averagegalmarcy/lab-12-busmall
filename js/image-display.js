@@ -1,4 +1,5 @@
 import html from './html.js'; 
+// import products from './product-list.js';
 
 function makeTemplate() {
     return html`
@@ -13,35 +14,32 @@ class ImageDisplay {
 
     constructor(product, onSelect) {
         this.product = product; 
-        this.randomImages = []; 
-        this.onSelect = onSelect; 
-        console.log('hi', product);  
+        // this.randomImages = []; 
+        this.onSelect = onSelect;  
     }
 
     render() { 
-        this.getImage(); 
+        // this.getImage(); 
         
-        const dom = makeTemplate(this.product); 
+        const dom = makeTemplate(); 
         const listItem = dom.querySelector('img'); 
-        listItem.addEventListener('click', () => {
-            this.onSelect(this.product); 
-        }); 
-
-
-        for(var i = 0; i < 3; i++) {
-            listItem.src = this.randomImages[i].image; 
-            this.randomImages[i].views++; 
-        }
+        // listItem.addEventListener('click', () => {
+        //     this.onSelect(this.product); 
+        // }); 
+        
+        
+        listItem.src = this.product.image;  
+    
 
         return dom;
     }
-    getImage() {
-        for(let i = 0; i < 3; i++) {
-            const index = Math.floor(Math.random() * 22);
-            this.randomImages.push(this.product[index]); 
+    // getImage() {
+    //     for(let i = 0; i < 3; i++) {
+    //         const index = Math.floor(Math.random() * 22);
+    //         this.randomImages.push(this.product[index]); 
 
-        }
-    } 
+    //     }
+    // } 
 }
 
 export default ImageDisplay; 

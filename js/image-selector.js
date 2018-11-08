@@ -1,5 +1,6 @@
 import html from './html.js'; 
 import ImageDisplay from './image-display.js'; 
+// import products from './product-list.js'; 
 
 function makeTemplate() {
     return html`
@@ -16,13 +17,29 @@ export default class ProductSelector {
         let dom = makeTemplate(); 
         const ul = dom.querySelector('ul'); 
 
-        this.products.forEach(product => {
-            let productComp = new ImageDisplay(product, this.onSelect); 
-            ul.appendChild(productComp.render()); 
-        }); 
+        // for(var i = 0; i < 3; i++) {
+        //     let productComp = new ImageDisplay(this.products[this.getImage()], this.onSelect); 
+        //     ul.appendChild(productComp.render()); 
+        // }
+        // let product = products[i]; 
+        // const randomArray = []; 
+        
+        // if(product.indexOf(product) === -1) {
+        //     product.push(product); 
+        // }
+        // else if 
 
         return dom; 
     }
+    getImage() {
+        // for(let i = 0; i < 3; i++) {
+            const index = Math.floor(Math.random() * 22);
+            // this.randomImages.push(this.product[index]); 
+
+            return index;
+
+        }
+    // } 
 }
 
 
