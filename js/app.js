@@ -32,6 +32,9 @@ class ProductApp {
             product.clicks++;
             this.totalCount++; 
             productSelector.update();
+            if(this.totalCount === 25) {
+                alert('The survey has ended'); 
+            } 
             // console.log('hello', product);
         
         });

@@ -9,9 +9,10 @@ function makeTemplate() {
 }
 
 export default class ProductSelector {
-    constructor(products, onSelect) {
+    constructor(products, onSelect, countStop) {
         this.products = products;
         this.onSelect = onSelect; 
+        // this.countStop = 0; 
          
     }
     render(){
@@ -27,14 +28,17 @@ export default class ProductSelector {
 
         while(this.ul.lastElementChild) {
             this.ul.lastElementChild.remove(); 
+            // console.log('sup', this.ul.lastElementChild); 
         }
+
+
         
         for(let i = 0; i < 3; i++) {    
             let index = this.getImage(); 
             let imageDisplay = new ImageDisplay(this.products[index], this.onSelect);
             this.products[index].views++; 
 
-            console.log('hello', this.products[index]); 
+            // console.log('hello', this.products[index]); 
         
 
             this.ul.appendChild(imageDisplay.render());
