@@ -22,7 +22,7 @@ class ProductApp {
     constructor(products, onSelect) { 
         this.onSelect = onSelect; 
         this.products = productApi.getAll();
-        this.totalCount = 0; 
+        this.totalCount = 0;  
     }
     render() {
         const dom = makeTemplate();
@@ -31,7 +31,8 @@ class ProductApp {
         let productSelector = new ProductSelector(this.products, product => {
             product.clicks++;
             this.totalCount++; 
-            console.log("products", product); 
+            productSelector.update();
+            // console.log('hello', product);
         
         });
         this.list.appendChild(productSelector.render()); 
