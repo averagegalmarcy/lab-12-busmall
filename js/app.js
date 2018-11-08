@@ -2,7 +2,7 @@
 import productApi from './product-api.js'; 
 import html from './html.js'; 
 import ProductSelector from './image-selector.js'; 
-import UpdateList from './update-list.js'; 
+// import UpdateList from './update-list.js';  
 
 // const products = productApi.getAll(); 
 
@@ -24,12 +24,6 @@ class ProductApp {
         this.products = productApi.getAll();
         this.totalCount = 0; 
     }
-    // update(){ 
-    //     let productUpdate = dom.querySelector('.update-list');
-    //     let firstProduct = this.products[0]; 
-    //     let updateList = new UpdateList(firstProduct); 
-    //     productUpdate.appendChild(updateList.render()); 
-    // }
     render() {
         const dom = makeTemplate();
         this.list = dom.querySelector('ul');
@@ -37,7 +31,6 @@ class ProductApp {
         let productSelector = new ProductSelector(this.products, product => {
             product.clicks++;
             this.totalCount++; 
-            // product.views++; 
             console.log("products", product); 
         
         });

@@ -89,6 +89,10 @@ let products = [{
 {
     name:'moldy sandwich bag',
     image: 'assets/mold.jpg'
+},
+{
+    name: 'nicholas cage pillow',
+    image: 'assets/nicholas-cage.jpg'
 }]; 
 
 export default products; 

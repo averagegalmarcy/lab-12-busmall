@@ -3,7 +3,7 @@ import html from './html.js';
 let template = function(products) {
     return html`
     <li>
-    <img class="product">
+    <img class="products">
     </li>
     `; 
 }; 
