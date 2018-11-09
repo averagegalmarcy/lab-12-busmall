@@ -20,8 +20,6 @@ class ProductApp {
         this.onSelect = onSelect; 
         this.products = productApi.getAll();
         this.survey = this.products;
-
-        
         this.surveyResults = surveyApi.getAll(); 
         this.totalCount = 0;  
 
@@ -39,9 +37,7 @@ class ProductApp {
             surveyApi.save(); 
             if(this.totalCount === 25) {
                 alert('The survey has ended'); 
-            } 
-            console.log('hello', this.survey);
-        
+            }       
         });
         this.list.appendChild(productSelector.render()); 
 
