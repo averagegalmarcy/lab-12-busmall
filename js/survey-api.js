@@ -1,19 +1,18 @@
 import products from './product-list.js'; 
 
+let productArray = []; 
+
+function saveProducts() {
+    window.localStorage.setItem('products', JSON.stringify(products));
+}
+
 const surveyApi = {
     getAll() {
-        const survey = products.map(product => {
-            return {
-                name: product.name,
-                image: product.image,
-                views: 0,
-                clicks: 0
-            };
-        });
-        return survey;
+        return products;
     },
-    save() {
-        window.localStorage.setItem('products', JSON.stringify(products));
-    }
+    add(product) {
+        productArray.push(product);
+        saveProducts();  
+    },
 }; 
 export default surveyApi; 

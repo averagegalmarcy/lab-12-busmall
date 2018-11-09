@@ -3,6 +3,7 @@ import html from './html.js';
 import ProductSelector from './image-selector.js'; 
 import surveyApi from './survey-api.js';
 
+
 function makeTemplate() {
     return html`
         <header> Product Survey </header>
@@ -20,7 +21,7 @@ class ProductApp {
         this.onSelect = onSelect; 
         this.products = productApi.getAll();
         this.survey = this.products;
-        this.surveyResults = surveyApi.getAll(); 
+        // this.surveyResults = surveyApi.getAll(); 
         this.totalCount = 0;  
 
     }
@@ -29,13 +30,12 @@ class ProductApp {
         this.list = dom.querySelector('ul');
         
         let productSelector = new ProductSelector(this.products, product => {
-            
             const index = this.survey.indexOf(product);
             this.survey[index].clicks++; 
             this.totalCount++; 
             productSelector.update();
-            surveyApi.save(); 
-            if(this.totalCount === 25) {
+            if(this.totalCount === 5) {
+                surveyApi.add(product);  
                 alert('The survey has ended'); 
             }       
         });
