@@ -1,6 +1,13 @@
-// import ImageDisplay from './image-display.js'; 
-// import productApi from './product-api.js';
+import products from './product-list.js'; 
 
-// let products = productApi.getAll();
+const surveyApi = {
+    getAll() {
+        return products;
+    },
 
+    save() {
+        window.localStorage.setItem('products', JSON.stringify(products));
+    }
+}; 
 
+export default surveyApi; 

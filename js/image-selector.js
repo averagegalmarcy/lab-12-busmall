@@ -11,13 +11,15 @@ function makeTemplate() {
 export default class ProductSelector {
     constructor(products, onSelect) {
         this.products = products;
-        this.onSelect = onSelect;  
+        this.onSelect = onSelect; 
+        this.handlerArray = []; 
+
          
     }
     render(){
         
         let dom = makeTemplate(); 
-        this.ul = dom.querySelector('ul'); 
+        this.ul = dom.querySelector('ul');
 
         this.update(); 
 
