@@ -37,7 +37,6 @@ class ProductApp {
             productSelector.update();
             if(this.totalCount === 25) {
                 surveyApi.saveProducts(); 
-                console.log('hello', product); 
                 window.location.replace('./user-summary.html'); 
             }       
         });

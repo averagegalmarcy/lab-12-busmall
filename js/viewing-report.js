@@ -1,9 +1,5 @@
 import html from './html.js'; 
-// import surveyApi from './survey-api.js';
-// import products from './product-list.js'; 
 
-// let element = surveyApi.getAll();
-// console.log('hello', element);
 
 let template = function(product) {
 
@@ -21,7 +17,6 @@ export default class ProductReport {
         this.product = product;
     }
     render() {
-        console.log('report', this.product); 
         let dom = template(this.product); 
         return dom; 
     }

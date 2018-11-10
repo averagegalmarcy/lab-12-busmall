@@ -1,7 +1,7 @@
 import html from './html.js';  
 import surveyApi from './survey-api.js'; 
 import ProductReport from './viewing-report.js'; 
-// import productApi from './product-api.js';
+
 
 function makeTemplate() {
     return html`

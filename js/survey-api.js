@@ -1,4 +1,3 @@
-// import products from './product-list.js'; 
 
 let productArray = []; 
 
