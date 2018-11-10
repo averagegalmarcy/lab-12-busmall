@@ -1,4 +1,4 @@
-import products from './product-list.js'; 
+// import products from './product-list.js'; 
 
 let productArray = []; 
 
@@ -7,7 +7,7 @@ const surveyApi = {
         window.localStorage.setItem('products', JSON.stringify(productArray));
     },
     getAll() {
-        return products;
+        return JSON.parse(window.localStorage.getItem('products')); 
     },
     add(product) {
         productArray.push(product);
