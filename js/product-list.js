@@ -1,98 +1,121 @@
 let products = [{
     name:'r2d2 suitcase',
-    image: 'assets/bag.jpg'
+    image: 'assets/bag.jpg',
+    
 },
 {
     name:'banana slicer',
-    image: 'assets/banana.jpg'
+    image: 'assets/banana.jpg',
+    
 },
 {
     name:'ipad stand',
-    image: 'assets/bathroom.jpg'
+    image: 'assets/bathroom.jpg',
+    
 },
 {
     name:'rain boots',
-    image: 'assets/boots.jpg'
+    image: 'assets/boots.jpg',
+    
 },
 {
     name:'breakfast maker',
-    image: 'assets/breakfast.jpg'
+    image: 'assets/breakfast.jpg',
+    
 },
 {
     name:'meatball gum',
-    image: 'assets/bubblegum.jpg'
+    image: 'assets/bubblegum.jpg',
+    
 },
 {
     name:'chair',
-    image: 'assets/chair.jpg'
+    image: 'assets/chair.jpg',
+    
 },
 {
     name:'cthulhu',
-    image: 'assets/cthulhu.jpg'
+    image: 'assets/cthulhu.jpg',
+    
 },
 {
     name:'dog duck mask',
-    image: 'assets/dog-duck.jpg'
+    image: 'assets/dog-duck.jpg',
+    
 },
 {
     name: 'dragon meat',
-    image: 'assets/dragon.jpg'
+    image: 'assets/dragon.jpg',
+    
 },
 {
     name:'pen silverware',
-    image: 'assets/pen.jpg'
+    image: 'assets/pen.jpg',
+    
 },
 {
     name:'pet sweeper',
-    image: 'assets/pet-sweep.jpg'
+    image: 'assets/pet-sweep.jpg',
+    
 },
 {
     name:'pizza scissors',
-    image: 'assets/scissors.jpg'
+    image: 'assets/scissors.jpg',
+    
 },
 {
     name:'shark bed',
-    image: 'assets/shark.jpg'
+    image: 'assets/shark.jpg',
+    
 },
 {
     name:'baby sweeper',
-    image: 'assets/sweep.png'
+    image: 'assets/sweep.png',
+    
 },
 {
     name:'tauntaun sleeping bag',
-    image: 'assets/tauntaun.jpg'
+    image: 'assets/tauntaun.jpg',
+    
 },
 {
     name:'unicorn meat',
-    image: 'assets/unicorn.jpg'
+    image: 'assets/unicorn.jpg',
+    
 },
 {
     name:'octopus usb',
-    image: 'assets/usb.gif'
+    image: 'assets/usb.gif',
+    
 },
 {
     name:'water can',
-    image: 'assets/water-can.jpg'
+    image: 'assets/water-can.jpg',
+    
 },
 {
     name:'wine glass',
-    image: 'assets/wine-glass.jpg'
+    image: 'assets/wine-glass.jpg',
+    
 },
 {
     name:'crib dribbler',
-    image: 'assets/dribbler.jpg'
+    image: 'assets/dribbler.jpg',
 },
 {
     name:'hander pants',
-    image: 'assets/handerpants.jpeg'
+    image: 'assets/handerpants.jpeg',
+    
 },
 {
     name:'moldy sandwich bag',
-    image: 'assets/mold.jpg'
+    image: 'assets/mold.jpg',
+    
 },
 {
     name: 'nicholas cage pillow',
-    image: 'assets/nicholas-cage.jpg'
+    image: 'assets/nicholas-cage.jpg',
+    
 }]; 
 
 export default products; 

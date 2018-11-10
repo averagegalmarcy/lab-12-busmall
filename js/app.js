@@ -20,7 +20,7 @@ class ProductApp {
     constructor(products, onSelect) { 
         this.onSelect = onSelect; 
         this.products = productApi.getAll();
-        this.survey = this.products;
+        // this.survey = this.products;
         // this.surveyResults = surveyApi.getAll(); 
         this.totalCount = 0;  
 
@@ -30,13 +30,15 @@ class ProductApp {
         this.list = dom.querySelector('ul');
         
         let productSelector = new ProductSelector(this.products, product => {
-            const index = this.survey.indexOf(product);
-            this.survey[index].clicks++; 
+            const index = this.products.indexOf(product);
+            this.products[index].clicks++; 
+            surveyApi.add(product);  
             this.totalCount++; 
             productSelector.update();
-            if(this.totalCount === 5) {
-                surveyApi.add(product);  
-                alert('The survey has ended'); 
+            if(this.totalCount === 25) {
+                surveyApi.saveProducts(); 
+                console.log('hello', product); 
+                window.location.replace('./user-summary.html'); 
             }       
         });
         this.list.appendChild(productSelector.render()); 

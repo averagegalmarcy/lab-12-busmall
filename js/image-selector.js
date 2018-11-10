@@ -2,21 +2,35 @@ import html from './html.js';
 import ImageDisplay from './image-display.js'; 
 // import UpdateList from './update-list.js'; 
 
+// function getProducts() {
+//     this.handlerArray = []; 
+//     while(this.handlerArray.length < 3) {
+//         let index = this.getImage(this.products.length); 
+//         if(this.handlerArray.includes(this.products[index]) === false) {
+//             if(hold.includes(this.products[index] === false)) {
+//                 this.products[index].views++; 
+//                 this.handlerArray.push(this.products[index]); 
+//             }
+//         }
+//     }
+//     return handlerArray; 
+// }
+
 function makeTemplate() {
     return html`
         <ul class="product-selector-list"><ul>
     `;
 }
 
-export default class ProductSelector {
+// let hold = []; 
+
+class ProductSelector {
     constructor(products, onSelect) {
         this.products = products;
         this.onSelect = onSelect; 
-        this.handlerArray = []; 
-
-         
     }
-    render(){
+
+    render() {
         
         let dom = makeTemplate(); 
         this.ul = dom.querySelector('ul');
@@ -30,7 +44,6 @@ export default class ProductSelector {
         while(this.ul.lastElementChild) {
             this.ul.lastElementChild.remove();  
         }
-
 
         
         for(let i = 0; i < 3; i++) {    
@@ -52,4 +65,5 @@ export default class ProductSelector {
     }
 }
 
+export default ProductSelector; 
 

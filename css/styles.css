@@ -18,7 +18,7 @@ img:hover {
     height: 250px; 
 }
 li {
-    margin-left: auto; 
+    margin-left: 7%; 
     margin-right: auto;
     display: inline-block;
     justify-content: space-evenly; 
