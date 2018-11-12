@@ -1,23 +1,33 @@
-import html from './html.js'; 
+import html from './html.js';  
+import surveyApi from './survey-api.js'; 
+import ProductReport from './viewing-report-item.js'; 
+// import SurveyChart from './viewing-chart.js'; 
 
 
-let template = function(product) {
-
-    let name = product.name; 
-    let clicks = product.clicks;
-    let views = product.views;  
-    
+function makeTemplate() {
     return html`
-    <li>${name} had ${clicks} clicks and ${views} views .</li>
-    `; 
-}; 
+        <main>
+            <ul id="product-list"></ul>
+        </main>
+    `;
+}
 
-export default class ProductReport {
-    constructor(product) {
-        this.product = product;
+export default class ResultApp {
+    constructor() {
+        this.surveyData = surveyApi.getAll(); 
     }
     render() {
-        let dom = template(this.product); 
+
+        const dom = makeTemplate(); 
+        
+        const reportSection = dom.querySelector('#product-list'); 
+        this.surveyData.forEach(product => {
+            const report = new ProductReport (product); 
+            reportSection.appendChild(report.render());
+            
+        });
         return dom; 
     }
 }
+
+
