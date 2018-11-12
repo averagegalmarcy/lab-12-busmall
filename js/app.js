@@ -35,7 +35,7 @@ class ProductApp {
             surveyApi.add(product);  
             this.totalCount++; 
             productSelector.update();
-            if(this.totalCount === 10) {
+            if(this.totalCount === 25) {
                 surveyApi.saveProducts(); 
                 window.location.replace('./user-summary.html'); 
             }       
