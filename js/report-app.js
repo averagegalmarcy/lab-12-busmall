@@ -15,17 +15,17 @@ function makeTemplate() {
 
 export default class ReportApp {
     constructor() {
-        this.chartApi = surveyApi.getAll();
+        this.chartData = surveyApi.getAll();
     }
     render() {
         const dom = makeTemplate(); 
 
         const reportSection = dom.querySelector('.viewing-report');
-        const report = new ResultApp(this.channelData);
+        const report = new ResultApp(this.chartData);
         reportSection.appendChild(report.render());
 
         const chartSection = dom.querySelector('.viewing-chart'); 
-        const chart = new SurveyChart(this.surveyData); 
+        const chart = new SurveyChart(this.chartData); 
         chartSection.appendChild(chart.render()); 
         
         return dom; 

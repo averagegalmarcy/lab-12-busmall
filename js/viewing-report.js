@@ -7,6 +7,7 @@ import ProductReport from './viewing-report-item.js';
 function makeTemplate() {
     return html`
         <main>
+            <h2> Result Report </h2>
             <ul id="product-list"></ul>
         </main>
     `;
@@ -14,14 +15,14 @@ function makeTemplate() {
 
 export default class ResultApp {
     constructor() {
-        this.surveyData = surveyApi.getAll(); 
+        this.surveyReport = surveyApi.getAll(); 
     }
     render() {
 
         const dom = makeTemplate(); 
         
         const reportSection = dom.querySelector('#product-list'); 
-        this.surveyData.forEach(product => {
+        this.surveyReport.forEach(product => {
             const report = new ProductReport (product); 
             reportSection.appendChild(report.render());
             

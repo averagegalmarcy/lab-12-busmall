@@ -1,8 +1,9 @@
 import html from './html.js'; 
-import surveyApi from './survey-api.js';
+// import surveyApi from './survey-api.js';
 
 function makeTemplate() {
     return html`
+    <h3> Chart </h3>
     <div class="chart-container">
         <canvas width="400"></canvas>
     </div>
@@ -11,7 +12,7 @@ function makeTemplate() {
 
 export default class SurveyChart {
     constructor(results) {
-        this.results = surveyApi.getAll();
+        this.results = results;
     }
 
     render() {
@@ -30,14 +31,14 @@ export default class SurveyChart {
             clicks.push(surveyChart.clicks); 
         }
 
-        this.chart = new SurveyChart(ctx, {
+        this.chart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: labels,
                 datasets: [{
                     label: '# of Views',
                     data: views,
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    backgroundColor: 'rgba(95, 95, 225)',
                     borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
                 }, 
