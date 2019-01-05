@@ -1,105 +1,107 @@
 let results = [{
-    name:'visitor',
-    score: '0-8',
-    
-},
-{
-    name:'poser',
-    score: '9-14',
-    
-},
-{
     name:'rain boots',
-    score: 'assets/boots.jpg',
+    score: 'assets/boots.jpg'
     
+},
+{
+    name:'bag',
+    score:'assets/bag.jpg'
+},
+{
+    name:'banana',
+    score:'assets/banana.jpg'
+},
+{
+    name:'bathroom',
+    score:'assets/bathroom.jpg'
 },
 {
     name:'breakfast maker',
-    score: 'assets/breakfast.jpg',
+    score: 'assets/breakfast.jpg'
     
 },
 {
     name:'meatball gum',
-    score: 'assets/bubblegum.jpg',
+    score: 'assets/bubblegum.jpg'
     
 },
 {
     name:'chair',
-    score: 'assets/chair.jpg',
+    score: 'assets/chair.jpg'
     
 },
 {
     name:'cthulhu',
-    score: 'assets/cthulhu.jpg',
+    score: 'assets/cthulhu.jpg'
     
 },
 {
     name:'dog duck mask',
-    score: 'assets/dog-duck.jpg',
+    score: 'assets/dog-duck.jpg'
     
 },
 {
     name: 'dragon meat',
-    score: 'assets/dragon.jpg',
+    score: 'assets/dragon.jpg'
     
 },
 {
     name:'pen silverware',
-    score: 'assets/pen.jpg',
+    score: 'assets/pen.jpg'
     
 },
 {
     name:'pet sweeper',
-    score: 'assets/pet-sweep.jpg',
+    score: 'assets/pet-sweep.jpg'
     
 },
 {
     name:'pizza scissors',
-    score: 'assets/scissors.jpg',
+    score: 'assets/scissors.jpg'
     
 },
 {
     name:'shark bed',
-    score: 'assets/shark.jpg',
+    score: 'assets/shark.jpg'
     
 },
 {
     name:'baby sweeper',
-    score: 'assets/sweep.png',
+    score: 'assets/sweep.png'
     
 },
 {
     name:'tauntaun sleeping bag',
-    score: 'assets/tauntaun.jpg',
+    score: 'assets/tauntaun.jpg'
     
 },
 {
     name:'unicorn meat',
-    score: 'assets/unicorn.jpg',
+    score: 'assets/unicorn.jpg'
     
 },
 {
     name:'octopus usb',
-    score: 'assets/usb.gif',
+    score: 'assets/usb.gif'
     
 },
 {
     name:'water can',
-    score: 'assets/water-can.jpg',
+    score: 'assets/water-can.jpg'
     
 },
 {
     name:'wine glass',
-    score: 'assets/wine-glass.jpg',
+    score: 'assets/wine-glass.jpg'
     
 },
 {
     name:'crib dribbler',
-    score: 'assets/dribbler.jpg',
+    score: 'assets/dribbler.jpg'
 },
 {
     name:'hander pants',
-    score: 'assets/handerpants.jpeg',
+    score: 'assets/handerpants.jpeg'
     
 },
 {
@@ -109,8 +111,7 @@ let results = [{
 },
 {
     name: 'nicholas cage pillow',
-    score: 'assets/nicholas-cage.jpg',
-    
+    score: 'assets/nicholas-cage.jpg'
 }]; 
 
 export default results; 

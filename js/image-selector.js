@@ -8,7 +8,6 @@ function makeTemplate() {
     `;
 }
 
-// let hold = []; 
 
 class ProductSelector {
     constructor(products, onSelect) {
