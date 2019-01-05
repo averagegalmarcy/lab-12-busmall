@@ -1,7 +1,6 @@
 import html from './html.js';  
 import surveyApi from './survey-api.js'; 
 import ProductReport from './viewing-report-item.js'; 
-// import SurveyChart from './viewing-chart.js'; 
 
 
 function makeTemplate() {

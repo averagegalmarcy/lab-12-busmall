@@ -1,5 +1,4 @@
 import html from './html.js'; 
-// import productApi from './product-api.js'; 
 import SurveyChart from './viewing-chart.js'; 
 import surveyApi from './survey-api.js';
 import ResultApp from './viewing-report.js'; 

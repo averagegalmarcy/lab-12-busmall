@@ -1,20 +1,6 @@
 import html from './html.js'; 
 import ImageDisplay from './image-display.js'; 
-// import UpdateList from './update-list.js'; 
 
-// function getProducts() {
-//     this.handlerArray = []; 
-//     while(this.handlerArray.length < 3) {
-//         let index = this.getImage(this.products.length); 
-//         if(this.handlerArray.includes(this.products[index]) === false) {
-//             if(hold.includes(this.products[index] === false)) {
-//                 this.products[index].views++; 
-//                 this.handlerArray.push(this.products[index]); 
-//             }
-//         }
-//     }
-//     return handlerArray; 
-// }
 
 function makeTemplate() {
     return html`

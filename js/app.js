@@ -20,8 +20,6 @@ class ProductApp {
     constructor(products, onSelect) { 
         this.onSelect = onSelect; 
         this.products = productApi.getAll();
-        // this.survey = this.products;
-        // this.surveyResults = surveyApi.getAll(); 
         this.totalCount = 0;  
 
     }

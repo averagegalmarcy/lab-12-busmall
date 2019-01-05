@@ -1,4 +1,3 @@
-// import ReportApp from './user-report-app.js';
 import ReportApp from './report-app.js';
 
 const app = new ReportApp();

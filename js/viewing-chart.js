@@ -1,5 +1,4 @@
 import html from './html.js'; 
-// import surveyApi from './survey-api.js';
 
 function makeTemplate() {
     return html`

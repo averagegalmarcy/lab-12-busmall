@@ -1,5 +1,4 @@
 import html from './html.js'; 
-// import products from './product-list.js';
 
 function makeTemplate() {
     return html`
