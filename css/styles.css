@@ -18,11 +18,11 @@ img:hover {
     height: 250px; 
 }
 li {
-    margin-left: 7%; 
-    margin-right: auto;
-    display: inline-block;
-    justify-content: space-evenly; 
     margin-top: 10%;
+    margin-left: 10%;
+    justify-content: space-evenly; 
+    display:inline-block;
+    margin-right:10px;
 }
 
 body {
